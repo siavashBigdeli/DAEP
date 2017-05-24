@@ -1,4 +1,13 @@
 function net = loadNet(img_size, use_gpu)
+% Loads a Caffe 'net' object for a specific image dimentions
+%
+%
+% Input:
+% img_size: MAP Image size [Height, Width].
+% use_gpu: GPU flag: use 1 if you use GPU, use 0 to run on CPU.
+%
+% Output:
+% map: Caffe 'net' object.
 
 net_size = [3, img_size(2), img_size(1)];
 
