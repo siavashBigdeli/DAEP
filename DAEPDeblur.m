@@ -6,8 +6,8 @@ function map = DAEPDeblur(degraded, kernel, sigma_d, params)
 % Input:
 % degraded: Observed degraded RGB input image in range of [0, 255].
 % kernel: Blur kernel (internally flipped for convolution).
-% sigma_d: Noise standard deviatin.
-% params: Set of paramters.
+% sigma_d: Noise standard deviation.
+% params: Set of parameters.
 % params.net: The DAE Network object loaded from MatCaffe.
 %
 % Optional parameters:

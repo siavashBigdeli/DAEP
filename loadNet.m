@@ -1,5 +1,5 @@
 function net = loadNet(img_size, use_gpu)
-% Loads a Caffe 'net' object for a specific image dimentions
+% Loads a Caffe 'net' object for a specific image dimensions
 %
 %
 % Input:
