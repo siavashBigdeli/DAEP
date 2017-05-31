@@ -5,8 +5,8 @@ function map = DAEPSR(degraded, up_scale, params, map)
 %
 % Input:
 % degraded: Observed blurry and noisy input RGB image in range of [0, 255].
-% sigma_d: Noise standard deviatin.
-% params: Set of paramters.
+% sigma_d: Noise standard deviation.
+% params: Set of parameters.
 % up_scale: Up scaling factor.
 % params.net: The DAE Network object from matCaffe.
 % params.sigma_c The Network noise standard deviation.
