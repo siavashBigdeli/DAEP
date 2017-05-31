@@ -16,7 +16,7 @@ caffe.reset_all();
 
 if use_gpu
     caffe.set_mode_gpu();
-    caffe.set_device(1);
+    caffe.set_device(0);
 else
     caffe.set_mode_cpu();
 end
