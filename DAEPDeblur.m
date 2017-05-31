@@ -74,9 +74,9 @@ for iter = 1:params.num_iter
     noise = randn(size(input)) * params.sigma_net;
     rec = params.net.forward({input+noise});
 
-    err = input - rec{1};
-    rec = params.net.backward({-err});
-    prior_err = rec{1};
+    prior_err = input - rec{1};
+    rec = params.net.backward({-prior_err});
+    prior_err = prior_err + rec{1};
 
     tmp = prior_err;
     prior_err = prior_err*0;

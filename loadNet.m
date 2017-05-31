@@ -1,12 +1,13 @@
 function net = loadNet(img_size, use_gpu)
 
+%%
 net_size = [3, img_size(2), img_size(1)];
 
 caffe.reset_all();
 
 if use_gpu
     caffe.set_mode_gpu();
-    caffe.set_device(0);
+    caffe.set_device(1);
 else
     caffe.set_mode_cpu();
 end
